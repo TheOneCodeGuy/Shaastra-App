@@ -1,0 +1,510 @@
+body
+{
+	perspective: 3000px;
+}
+
+#container1
+{
+	height: 90px;
+	width: 30px;
+	position: absolute;
+	transform-style: preserve-3d;
+	left: 650px;
+	top : 20px;
+}
+
+#container2
+{
+	height: 90px;
+	width: 30px;
+	position: absolute;
+	transform-style: preserve-3d;
+	left: 690px;
+	top : 20px;
+}
+
+#container3
+{
+	height: 30px;
+	width: 112px;
+	position: absolute;
+	transform-style: preserve-3d;
+	display: inline-block;
+	left: 660px;
+	top : 61px;
+}
+
+#container4
+{
+	height: 30px;
+	width: 112px;
+	position: absolute;
+	transform-style: preserve-3d;
+	display: inline-block;
+	left: 650px;
+	top : 100px;
+}
+
+#rotator1
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotatevu 0.2s 1 linear forwards 0.65s;
+}
+#rotator2
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotatevd 0.2s 1 linear forwards 0.25s;
+}
+
+#rotator3
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotatehl 0.2s 1 linear forwards;
+}
+
+#rotator4
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotatehr 0.2s 1 linear forwards 0.45s;
+}
+
+#front3
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateZ(65px);
+	backface-visibility: hidden;
+	background-color: white;
+}
+
+#a3
+{
+	background-color: orange;
+	display: inline-block;
+	height: 100%;
+	width : 30px;
+}
+
+#b3
+{
+	background-color: green;
+	display: inline-block;
+	margin-left: 10px;
+	height: 100%;
+	width : 30px;
+}
+
+#c3
+{
+	background-color: blue;
+	display: inline-block;
+	margin-left: 4px;
+	height: 100%;
+	width : 30px;
+}
+
+#right3
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateX(55px) rotateY(90deg);	
+	background-color: white;
+	animation: invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.2s;
+}
+
+#aa3
+{
+	background-color: orange;
+	display: inline-block;
+	margin-left: -10px;
+	height: 100%;
+	width : 30px;
+}
+
+#bb3
+{
+	background-color: green;
+	display: inline-block;
+	margin-left: 10px;
+	height: 100%;
+	width : 30px;
+}
+
+#cc3
+{
+	background-color: blue;
+	display: inline-block;
+	margin-left: 14px;
+	height: 100%;
+	width : 30px;
+}
+
+#front4
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateZ(65px);
+	backface-visibility: hidden;
+	background-color: white;
+	opacity: 0;
+	animation: visible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.4s 
+}
+
+#a4
+{
+	background-color: blue;
+	display: inline-block;
+	height: 100%;
+	width : 30px;
+}
+
+#b4
+{
+	background-color: rgb(220,220,220);
+	display: inline-block;
+	margin-left: 10px;
+	height: 100%;
+	width : 30px;
+}
+
+#c4
+{
+	background-color: red;
+	display: inline-block;
+	margin-left: 4px;
+	height: 100%;
+	width : 30px;
+}
+
+#left4
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transform: translateX(-55px) rotateY(-90deg);	
+	background-color: white;
+	animation: invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.6s;
+}
+
+#aa4
+{
+	background-color: orange;
+	display: inline-block;
+	height: 100%;
+	width : 30px;
+}
+
+#bb4
+{
+	background-color: rgb(220,220,220);
+	display: inline-block;
+	margin-left: 4px;
+	height: 100%;
+	width : 30px;
+}
+
+#cc4
+{
+	background-color: red;
+	display: inline-block;
+	margin-left: 8px;
+	height: 100%;
+	width : 30px;
+}
+
+#front1
+{
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateZ(47.5px);
+	backface-visibility: hidden;
+	background-color: white;
+	animation: visible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.6s;
+}
+
+#a1
+{
+	background-color: rgb(220,220,220);
+	height: 33%;
+	width : 100%;
+}
+
+#b1
+{
+	background-color: orange;
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+#c1
+{
+	background-color: orange;
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+#top1
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateY(-47.5px) rotateX(90deg);	
+	backface-visibility: hidden;
+	background-color: white;
+}
+
+#aa1
+{
+	background-color: rgb(220,220,220);
+	height: 33%;
+	width : 100%;
+}
+
+#bb1
+{
+	background-color: orange;
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+#cc1
+{
+	background-color: blue;
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+
+#front2
+{
+	height: 100%;
+	width: 100%;
+	transform: translateZ(47.5px);
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	position: absolute;
+	background-color: white;
+	opacity: 0;
+	animation :visible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.2s;
+}
+
+#a2
+{
+	background-color: green;
+	height: 33%;
+	width : 100%;
+}
+
+#b2
+{
+	background-color: green;
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+#c2
+{
+	background-color: rgb(220,220,220);
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+#bottom2
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transform: translateY(47.5px) rotateX(-90deg);	
+	background-color: white;
+}
+
+#aa2
+{
+	background-color: green;
+	height: 33%;
+	width : 100%;
+}
+
+#bb2
+{
+	background-color: green;
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+#cc2
+{
+	background-color: rgb(220,220,220);
+	margin-top: 10px;
+	height: 33%;
+	width : 100%;
+}
+
+#mr
+{
+	background-color: blue;
+	transform: translateZ(65px);
+	opacity: 0;
+	position: absolute;
+	left: 730px;
+	top : 60px;
+	height: 30px;
+	width: 30px;
+	animation: visible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.2s;
+}
+#bl
+{
+	background-color: blue;
+	transform: translateZ(65px);
+	opacity: 1;
+	position: absolute;
+	left: 650px;
+	top : 100px;
+	height: 30px;
+	width: 30px;
+	animation: invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.4s;
+}
+#br
+{
+	background-color: red;
+	transform: translateZ(65px);
+	opacity: 1;
+	position: absolute;
+	left: 730px;
+	top : 100px;
+	height: 30px;
+	width: 30px;
+	animation: invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.4s, visible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.61s;
+}
+#bc
+{
+	background-color: rgb(220,220,220);
+	transform: translateZ(65px);
+	opacity: 1;
+	position: absolute;
+	left: 691px;
+	top : 99px;
+	height: 30px;
+	width: 30px;
+	animation: invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.2s;
+}
+#ml
+{
+	background-color: orange;
+	transform: translateZ(65px;);
+	opacity: 0;
+	position: absolute;
+	left: 650px;
+	top : 61px;
+	height: 30px;
+	width: 30px;
+	animation: visible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.2s, invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.6s;
+}
+#tc
+{
+	background-color: green;
+	transform: translateZ(65px;);
+	opacity: 1;
+	position: absolute;
+	left: 690px;
+	top : 20px;
+	height: 30px;
+	width: 30px;
+	animation: invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.2s;
+}
+#tr
+{
+	background-color: green;
+	transform: translateZ(65px);
+	opacity: 1;
+	position: absolute;
+	left: 730px;
+	top : 20px;
+	height: 30px;
+	width: 30px;
+}
+#tl
+{
+	background-color: rgb(220,220,220);
+	position: absolute;
+	left:650px;
+	top:20px;
+	height: 30px;
+	width: 30px;
+	animation: invisible 0.01s 1 cubic-bezier(1,0,1,0) forwards 0.6s;
+}
+@keyframes rotatevu
+{
+	0% {transform: rotateX(0deg);}
+	100% {transform: rotateX(-90deg); }
+}
+
+@keyframes rotatevd
+{
+	0% {transform: rotateX(0deg);}
+	100% {transform: rotateX(90deg); }
+}
+
+@keyframes rotatehl
+{
+	0% {transform: rotateY(0deg);}
+	100% {transform: rotateY(-90deg); }
+}
+
+@keyframes rotatehr
+{
+	0% {transform: rotateY(0deg);}
+	100% {transform: rotateY(90deg); }
+}
+
+@keyframes trans
+{
+	100% {opacity: 0;}
+}
+
+@keyframes green
+{
+	100% {background-color : green;}
+}
+
+@keyframes visible
+{
+	100% {opacity: 1;}
+}
+
+@keyframes invisible
+{
+	100% {opacity: 0;}
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="image/gif" rel="icon" href="logo.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+</head>
+<body>
+	<br>
+	<br>
+	<div class="container">
+		<form>
+			<div class="col-md-4 form-group">
+				<input type="text" id="word1" placeholder="Word 1" class="form-control">
+			</div>
+			<div class="col-md-4 form-group">
+				<input type="text" id="word2" placeholder="Word 2" class="form-control">
+			</div>
+			<div class="col-md-4 form-group">
+				<input type="text" id="word3" placeholder="Word 3" class="form-control">
+			</div>
+			<br>
+			<br>
+		</form>
+		<div class="row">
+			<div>
+				<button id="submit" onclick = "showWords()" class="btn btn-warning center-block">Show Message</button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div id="view" class="text-center">
+				Message Area
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
